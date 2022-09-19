@@ -20,6 +20,7 @@ export const TemplateParagraph = styled.p`
   width: 100%;
   font-size: 1.3rem;
   color: #e88b05;
+  font-weight: bolder;
   transition: all 0.5s ease-in-out;
   transition-delay: 0.05s;
   &:hover {
