@@ -8,7 +8,7 @@ const ComponentIndex = () => {
     <TemplateDiv>
       <ParticlesBackground />
       <TemplateImage src={banner}></TemplateImage>
-      <Link href="/">
+      <Link href="/home">
         <TemplateTitle>MINECRAFT-API</TemplateTitle>
       </Link>
     </TemplateDiv>

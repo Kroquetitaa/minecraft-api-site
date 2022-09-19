@@ -1,6 +1,10 @@
+import PagesLayout from "@components/PagesLayout"
+
 const home = () => {
   return (
-    <div>home</div>
+    <PagesLayout title="Home">
+        <div>Hola</div>
+    </PagesLayout>
   )
 }
 
