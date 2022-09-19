@@ -23,7 +23,8 @@
       "@logos/*": ["assets/logos/*"],
       "@styles/*": ["styles/*"],
       "@templates/*": ["templates/*"],
-      "@icons/*": ["icons/*"]
+      "@icons/*": ["icons/*"],
+      "@particles/*": ["particles/*"],
     },
     "incremental": true
   },

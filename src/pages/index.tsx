@@ -1,11 +1,10 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
+import ComponentIndex from '@components/ComponentIndex';
 
 const Home: NextPage = () => {
   return (
     <>
-      <h1>Arquitectura del proyecto base</h1>
+      <ComponentIndex />
     </>
   );
 };
