@@ -1,0 +1,5 @@
+{
+    "extends": ["next/core-web-vitals","next/babel"],
+    "presets": ["@emotion/babel-preset-css-prop"]
+  }
+  
