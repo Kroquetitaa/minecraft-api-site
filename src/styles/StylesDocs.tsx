@@ -1,5 +1,8 @@
 import styled from '@emotion/styled';
 
+
+export const TemplateData = styled.div``;
+
 export const TemplateGrid = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -37,6 +40,17 @@ background-color: #ddd;
   grid-column-start: 2;
   grid-row-end: 4;
   grid-column-end: 7;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #1e2b36;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+  }
+  
 `;
 
 export const TemplateDiv = styled.div`
@@ -60,3 +74,5 @@ export const TemplateParagraph = styled.p`
     color: #e88b05;
   }
 `;
+
+export const TemplateLink = styled.img``;

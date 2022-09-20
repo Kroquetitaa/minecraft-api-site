@@ -1,25 +1,25 @@
-import TemplateMenu from '@templates/TemplateMenu';
 import PagesLayout from '@components/PagesLayout';
 import {
+  TemplateGridTwo,
   TemplateGrid,
   TemplateGridOne,
-  TemplateGridTwo,
 } from '@styles/StylesDocs';
+import TemplateMenu from '@templates/TemplateMenu';
+import IntroductionDetail from 'containers/IntroductionDetail';
 
-const documentation = () => {
-  const title: string = 'Documentation';
+const Introduction = () => {
   return (
-    <PagesLayout title={title}>
+    <PagesLayout title="Introduction">
       <TemplateGrid>
         <TemplateGridOne>
           <TemplateMenu />
         </TemplateGridOne>
         <TemplateGridTwo>
-          
+          <IntroductionDetail />
         </TemplateGridTwo>
       </TemplateGrid>
     </PagesLayout>
   );
 };
 
-export default documentation;
+export default Introduction;

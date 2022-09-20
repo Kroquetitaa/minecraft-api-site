@@ -25,6 +25,7 @@
       "@templates/*": ["templates/*"],
       "@icons/*": ["icons/*"],
       "@particles/*": ["particles/*"],
+      "@interfaces/*":["interfaces/*"]
     },
     "incremental": true
   },

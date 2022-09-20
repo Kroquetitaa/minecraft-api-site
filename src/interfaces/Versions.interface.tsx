@@ -1,8 +1,10 @@
-export interface Item {
-  id: number;
-  item: string;
-  stack: number;
-  minecraftName: string;
+export interface Versions {
+  version: string;
+  items: Items[];
+}
+
+export interface Items {
+  item: number;
   minecraftIDName: string;
   minecraftID: number;
   minecraftDataValue: MinecraftDataValue;
@@ -22,26 +24,5 @@ interface NameItem {
   nameItemEnglish: string;
 }
 
-type MinecraftDataValue =
-  | 0
-  | 1
-  | 2
-  | 3
-  | 4
-  | 5
-  | 6
-  | 7
-  | 8
-  | 9
-  | 10
-  | 11
-  | 12
-  | 13
-  | 14
-  | 15
-  | 16
-  | 17
-  | 18
-  | 19
-  | 20;
+type MinecraftDataValue = 0 | 1;
 type FlamableItem = true | false;
