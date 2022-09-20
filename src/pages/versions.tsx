@@ -1,7 +1,22 @@
 import PagesLayout from '@components/PagesLayout';
-import React from 'react';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
-const versions = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  const urlVersions: string = 'http://localhost:8080/api/versions/';
+  const response = await fetch(urlVersions);
+  const { results } = await response.json();
+
+  return {
+    props: {
+      results,
+    },
+  };
+};
+
+const versions = ({
+  results,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  console.log(results);
   const title: string = 'Versions';
   return (
     <PagesLayout title={title}>
