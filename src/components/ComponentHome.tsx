@@ -10,30 +10,29 @@ import logo from '@logos/logo.png';
 import Image from 'next/image';
 
 const ComponentHome = () => {
-  const [showCard, setShowCard] = useState(false);
-  const clickEvent = () => {
-    
-    showCard === true ? setShowCard(false) : setShowCard(true);
+  const [ flag, setFlag ] = useState(0);
+  const clickEvent = (number: number) => {
+     setFlag(number);
   };
   return (
     <TemplateDiv>
       <TemplateDivOne>
-        <Buttons type="button" onClick={() => clickEvent()}>
+        <Buttons type="button" onClick={() => clickEvent(1)}>
           Versions
         </Buttons>
-        <Buttons  type="button" onClick={() => clickEvent()}>
+        <Buttons  type="button" onClick={() => clickEvent(2)}>
           Items
         </Buttons>
-        <Buttons onClick={() => clickEvent()}>
+        <Buttons onClick={() => clickEvent(3)}>
           Games
         </Buttons>
-        <Buttons onClick={() => clickEvent()}>
+        <Buttons onClick={() => clickEvent(4)}>
           Characters
         </Buttons>
       </TemplateDivOne>
       <TemplateDivTwo>
         <Image src={logo} width={512} height={64} />
-        {showCard ? <DataItems /> : <h3>Selecciona un input . . .</h3>}
+        {!flag ? <h3>Selecciona un input . . .</h3> : <DataItems value={flag}/>}
       </TemplateDivTwo>
     </TemplateDiv>
   );
