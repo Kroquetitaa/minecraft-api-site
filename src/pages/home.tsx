@@ -1,9 +1,11 @@
+import ComponentHome from "@components/ComponentHome"
 import PagesLayout from "@components/PagesLayout"
+
 
 const home = () => {
   return (
     <PagesLayout title="Home">
-        <div>Hola</div>
+        <ComponentHome/>
     </PagesLayout>
   )
 }
