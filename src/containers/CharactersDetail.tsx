@@ -24,16 +24,16 @@ const CharactersDetail = () => {
     healthPoints: 1,
     image: 'imagen',
     attackStrength: 20,
-    hitBoxSize: [
+    hitboxSize: [
       {
         mode: 'normal',
-        hitboxHeight: {
-          hitboxSpanish: 'spanish',
-          hitboxEnglish: 'english',
-        },
         hitboxWidth: {
           hitboxSpanish: 'spanish',
           hitboxEnglish: 'english',
+        },
+        hitboxHeight: {
+          hitboxEnglish: 'english',
+          hitboxSpanish: 'spanish',
         },
       },
     ],

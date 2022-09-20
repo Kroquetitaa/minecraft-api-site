@@ -12,6 +12,7 @@ import {
   TemplateH4,
 } from '@styles/StylesCharacters';
 import ComponentIndex from '@components/ComponentIndex';
+import CharactersValuesDetail from 'containers/CharactersValuesDetail';
 
 export const getStaticProps: GetStaticProps = async () => {
   const urlCharacters: string = 'http://localhost:8080/api/characters/';
@@ -54,6 +55,7 @@ const characters = ({
                 <strong>attackStrength: </strong>
                 {results.attackStrength}
               </TemplateParagraph>
+              <CharactersValuesDetail values={results.hitboxSize}/>
             </TemplateDivDetras>
           </TemplateDivCharacters>
         ))}

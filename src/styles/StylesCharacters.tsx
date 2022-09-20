@@ -23,6 +23,7 @@ export const TemplateDivCharacters = styled.div`
 
 export const TemplateDivCara = styled.div`
   backface-visibility: hidden;
+  padding: 100px;
 `;
 
 export const TemplateDivDetras = styled.div`
