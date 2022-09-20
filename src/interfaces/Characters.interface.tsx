@@ -3,7 +3,7 @@ export interface Characters {
   healthPoints: number;
   image: string;
   attackStrength: number;
-  hitBoxSize: hitBoxSize[];
+  hitboxSize: hitBoxSize[];
 }
 
 interface hitBoxSize {

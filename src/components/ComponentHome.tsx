@@ -1,24 +1,15 @@
 import { TemplateDiv, Buttons } from '@styles/StyleHome';
+import CharactersSchemaDetail from 'containers/CharactersSchemaDetail';
 // import { GetStaticProps, GetServerSideProps } from 'next';
 // import { ParsedUrlQuery } from 'querystring';
 import { Item } from 'interfaces/Item.interface';
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import { findDOMNode } from 'react-dom';
 import ReactJson from 'react-json-view';
 
 const ComponentHome = () => {
-  //   const [items, setItems] = useState([]);
-
-  //   const itemsURL: string = 'http://localhost:8080/api/items/';
-
-  //   const result = [];
-
-  //   const peticionAPI = async () => {
-  //     const res = await fetch(itemsURL);
-  //     const convertToJSON = await res.json();
-  //     const data = convertToJSON.results[0];
-  //     result.push(data)
-  //   };
-
+  const [showCard, setShowCard] = useState(false);
   const data: Item = {
     id: 5,
     item: '163:0',
@@ -51,17 +42,17 @@ const ComponentHome = () => {
     quotesOnKeys={false}
   /> */
   }
-  
-  const clickEvent = () => {
-    console.log('click')
-  }
 
+  const clickEvent = () => {
+    showCard === true ? setShowCard(false) : setShowCard(true);
+  };
 
   return (
     <TemplateDiv>
-      <Buttons type="button" onClick={ () => clickEvent()}>
+      <Buttons type="button" onClick={() => clickEvent()}>
         Versions
       </Buttons>
+      {showCard && <CharactersSchemaDetail />}
       <Buttons type="button">Items</Buttons>
       <Buttons type="button">Games</Buttons>
       <Buttons type="button">Characters</Buttons>
@@ -69,18 +60,3 @@ const ComponentHome = () => {
   );
 };
 export default ComponentHome;
-
-// export const getStaticProps: GetStaticProps = async () => {
-//   const res = await fetch('http://localhost:8080/api/items/');
-//   const data: IndexPageProps = await res.json();
-//   if (!data) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// };

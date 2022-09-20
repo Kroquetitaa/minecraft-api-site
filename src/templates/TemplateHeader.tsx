@@ -23,11 +23,6 @@ const TemplateHeader = () => {
             <TemplateParagraph>Documentation</TemplateParagraph>
           </TemplateLi>
         </Link>
-        <Link href="/versions">
-          <TemplateLi color="#E88B05">
-            <TemplateParagraph>Versions display</TemplateParagraph>
-          </TemplateLi>
-        </Link>
         <Link href="/items">
           <TemplateLi color="#E88B05">
             <TemplateParagraph>Items display</TemplateParagraph>

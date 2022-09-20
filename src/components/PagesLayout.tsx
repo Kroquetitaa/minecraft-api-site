@@ -4,8 +4,9 @@ import TemplateFooter from '@templates/TemplateFooter';
 
 interface Props {
   title: Title;
-  children: JSX.Element;
+  children?: Children;
 }
+type Children = JSX.Element | JSX.ElementAttributesProperty[] | JSX.ElementChildrenAttribute | JSX.Element[];
 
 type Title = string | string[];
 

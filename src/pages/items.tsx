@@ -1,8 +1,15 @@
 import PagesLayout from '@components/PagesLayout';
 import { Item } from '@interfaces/Item.interface';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { getStaticProps } from './versions';
+import {
+  TemplateDiv,
+  TemplateDivGeneral,
+  TemplateImage,
+} from '@styles/StylesItems';
+import Link from 'next/link';
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetStaticProps = async () => {
   const urlItems: string = 'http://localhost:8080/api/items/';
   const response = await fetch(urlItems);
   const { results } = await response.json();
@@ -16,17 +23,21 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const items = ({ results }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const title: string = 'Items';
-  console.log(results.map((value: Item) => value.id));
+
   return (
     <PagesLayout title={title}>
-      <div>
-        {results.map((value: Item) => {
-          <div>
-            <h2>{value.id}</h2>
-            <p>{}</p>
-          </div>;
-        })}
-      </div>
+      <TemplateDivGeneral>
+        {results.map((results: Item) => (
+          <TemplateDiv key={results.id}>
+            <TemplateImage src={results.imageItem} width={50} height={50} />
+            <div>
+              <Link href={`/items/${results.minecraftIDName}`}>
+                <h3>{results.minecraftName}</h3>
+              </Link>
+            </div>
+          </TemplateDiv>
+        ))}
+      </TemplateDivGeneral>
     </PagesLayout>
   );
 };
