@@ -4,6 +4,7 @@ import {
   TemplateGrid,
   TemplateGridOne,
   TemplateGridTwo,
+  TemplateMensaje,
 } from '@styles/StylesDocs';
 
 const documentation = () => {
@@ -15,7 +16,12 @@ const documentation = () => {
           <TemplateMenu />
         </TemplateGridOne>
         <TemplateGridTwo>
-          
+          <TemplateMensaje>
+            <h3>
+              Selecciona cualquier enlance del menú para buscar información
+              sobre la API
+            </h3>
+          </TemplateMensaje>
         </TemplateGridTwo>
       </TemplateGrid>
     </PagesLayout>

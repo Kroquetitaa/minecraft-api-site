@@ -19,23 +19,26 @@ import React from 'react';
 import ReactJson from 'react-json-view';
 
 const ItemsDetail = () => {
-  const data: Versions = {
-    version: 'Minecraft 1.11',
+  const version: Versions = {
+    version: 'Minecraft 1.10',
     items: [
       {
         item: 1,
-        minecraftIDName: 'ID-NAME',
-        minecraftID: 1,
+        stack: 64,
+        minecraftID: 163,
         minecraftDataValue: 0,
         flamableItem: true,
-        rarityColor: {
-          rarityColorSpanish: 'spanish',
-          rarityColorEnglish: 'english',
-        },
-        imageItem: 'imagen',
+        minecraftIDName: 'minecraft:acacia_stairs',
+        minecraftName: 'Acacia Stairs',
+        imageItem:
+          'https://res.cloudinary.com/kroquetita/image/upload/v1663397789/dev/acacia_wood_stairs.png.png',
         nameItem: {
-          nameItemSpanish: 'spanish',
-          nameItemEnglish: 'english',
+          nameItemSpanish: 'Escaleras de madera de acacia',
+          nameItemEnglish: 'Acacia Stairs',
+        },
+        rarityColor: {
+          rarityColorSpanish: 'comun',
+          rarityColorEnglish: 'common',
         },
       },
     ],
@@ -77,7 +80,7 @@ const ItemsDetail = () => {
           <TemplatePetition>GET</TemplatePetition>
         </TemplateDivCircles>
         <ReactJson
-          src={data}
+          src={version}
           iconStyle="square"
           displayObjectSize={true}
           displayDataTypes={true}
@@ -101,7 +104,7 @@ const ItemsDetail = () => {
           <TemplatePetition>GET</TemplatePetition>
         </TemplateDivCircles>
         <ReactJson
-          src={data}
+          src={version}
           iconStyle="square"
           displayObjectSize={true}
           displayDataTypes={true}
@@ -126,7 +129,7 @@ const ItemsDetail = () => {
           <TemplatePetition>GET</TemplatePetition>
         </TemplateDivCircles>
         <ReactJson
-          src={data}
+          src={version}
           iconStyle="square"
           displayObjectSize={true}
           displayDataTypes={true}
