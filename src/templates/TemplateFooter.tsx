@@ -3,6 +3,7 @@ import {
   TemplateLi,
   TemplateParagraph,
 } from '@styles/StylesFooter';
+import ReactAudioPlayer from 'react-audio-player';
 
 const TemplateFooter = () => {
   return (
@@ -17,6 +18,7 @@ const TemplateFooter = () => {
       </TemplateLi>
       <TemplateLi>
         <TemplateParagraph>Kroquetita-2022</TemplateParagraph>
+        <ReactAudioPlayer src="../music/song.mp3" autoPlay controls={true} />
       </TemplateLi>
     </TemplateUl>
   );

@@ -7,6 +7,8 @@ export interface Items {
   item: number;
   minecraftIDName: string;
   minecraftID: number;
+  stack: number,
+  minecraftName: string,
   minecraftDataValue: MinecraftDataValue;
   flamableItem: FlamableItem;
   rarityColor: RarityColor;

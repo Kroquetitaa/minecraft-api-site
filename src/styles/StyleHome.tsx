@@ -74,3 +74,9 @@ export const Buttons = styled.button`
     border-color: #e88b05;
   }
 `;
+
+export const TemplateDivAbsolute = styled.div`
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+`;

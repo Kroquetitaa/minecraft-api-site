@@ -1,3 +1,4 @@
+import { createClientMessage } from 'react-chatbot-kit';
 import React from 'react';
 
 const MessageParser = ({ children, actions }) => {
