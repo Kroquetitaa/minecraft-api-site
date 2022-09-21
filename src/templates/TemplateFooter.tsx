@@ -13,12 +13,12 @@ const TemplateFooter = () => {
       </TemplateLi>
       <TemplateLi>
         <TemplateParagraph>
-          Items: {0} Characters: {0} Games: {0}
+          Items: {10} Characters: {2} Games: {3}
         </TemplateParagraph>
       </TemplateLi>
       <TemplateLi>
         <TemplateParagraph>Kroquetita-2022</TemplateParagraph>
-        <ReactAudioPlayer src="../music/song.mp3" autoPlay controls={true}/>
+        {/* <ReactAudioPlayer src="../music/song.mp3" autoPlay controls={true}/> */}
       </TemplateLi>
     </TemplateUl>
   );

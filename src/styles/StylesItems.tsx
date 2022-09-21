@@ -5,12 +5,14 @@ export const TemplateDivGeneral = styled.div`
   width: 100%;
   height: 75vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 `;
 
 export const TemplateDiv = styled.div`
     display: flex;
+    width: 350px;
     flex-wrap: wrap;
     align-items: center;
     border: 3px solid #1e2b36;

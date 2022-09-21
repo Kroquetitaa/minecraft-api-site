@@ -55,6 +55,42 @@ const characters = ({
                 <strong>attackStrength: </strong>
                 {results.attackStrength}
               </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>Mode: </strong>
+                {results.hitboxSize[0].mode}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>hitBoxSize: </strong>
+                {results.hitboxSize[0].hitboxHeight.hitboxEnglish}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>hitBoxSize: </strong>
+                {results.hitboxSize[0].hitboxWidth.hitboxEnglish}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>Mode: </strong>
+                {results.hitboxSize[1].mode}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>hitBoxSize: </strong>
+                {results.hitboxSize[1].hitboxHeight.hitboxEnglish}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>hitBoxSize: </strong>
+                {results.hitboxSize[1].hitboxWidth.hitboxEnglish}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>Mode: </strong>
+                {results.hitboxSize[2].mode}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>hitBoxSize: </strong>
+                {results.hitboxSize[2].hitboxHeight.hitboxEnglish}
+              </TemplateParagraph>
+              <TemplateParagraph>
+                <strong>hitBoxSize: </strong>
+                {results.hitboxSize[2].hitboxWidth.hitboxEnglish}
+              </TemplateParagraph>
               <CharactersValuesDetail values={results.hitboxSize}/>
             </TemplateDivDetras>
           </TemplateDivCharacters>
