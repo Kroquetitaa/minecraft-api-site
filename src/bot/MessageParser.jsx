@@ -1,10 +1,15 @@
-import { createClientMessage } from 'react-chatbot-kit';
 import React from 'react';
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     if (message.includes('Hola')) {
       actions.handleHello();
+    }
+    if (message.includes('Si')) {
+      actions.handleYes();
+    }
+    if (message.includes('No')) {
+      actions.handleNo();
     }
   };
 

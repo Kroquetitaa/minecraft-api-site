@@ -18,7 +18,7 @@ const TemplateFooter = () => {
       </TemplateLi>
       <TemplateLi>
         <TemplateParagraph>Kroquetita-2022</TemplateParagraph>
-        <ReactAudioPlayer src="../music/song.mp3" autoPlay controls={true} />
+        <ReactAudioPlayer src="../music/song.mp3" autoPlay controls={true}/>
       </TemplateLi>
     </TemplateUl>
   );
