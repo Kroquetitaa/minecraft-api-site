@@ -13,7 +13,7 @@ const TemplateFooter = () => {
       </TemplateLi>
       <TemplateLi>
         <TemplateParagraph>
-          Items: {10} Characters: {2} Games: {3}
+          Items: {38} Characters: {2} Games: {3}
         </TemplateParagraph>
       </TemplateLi>
       <TemplateLi>
